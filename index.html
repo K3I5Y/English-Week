@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semana del Inglés</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="qr-expandable-card.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">English Week</div>
+  </header>
+ 
+  <nav>
+    <a href="#definicion">Meaning</a>
+    <a href="#por-que">¿Why is it celebrated?</a>
+    <a href="#cronograma">Schedule</a>
+    <a href="#codigoqr">QR Code</a>
+  </nav>
+ 
+  <div class="container">
+    <section id="definicion" class="section">
+      <h1>Meaning</h1>
+      <p>
+        English Language Week is an academic celebration dedicated to strengthening and <br> promoting the English language through educational, recreational, and cultural activities. <br> It is aimed at students of all levels with the goal <br> of improving their linguistic and cultural competence.
+      </p>
+    </section>
+ 
+    <section id="por-que" class="section">
+      <h1>¿Why is it celebrated?</h1>
+      <p>
+        This week is celebrated to encourage the use of English in real-life and fun contexts, <br> motivating students to practice it creatively. <br> It also allows students to learn more about Anglo-Saxon culture, including its <br> music, art, cuisine, and customs.
+      </p>
+      <div class="image-center">
+        <img src="https://englishweek.es/wp-content/uploads/2023/01/ilustracion-home-english-week.png" alt="Imagen Semana del Inglés" width="300">
+      </div>
+    </section>
+ 
+    <section id="cronograma" class="section">
+      <h1>Schedule</h1>
+      <table border="1" cellpadding="10" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Activity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Día 1 -->
+    <tr>
+      <td>Day #1 <br> Monday 4th</td>
+      <td>Opening Ceremony Civic Act <br> 1. “Welcome to English Week 2025” <br> <div class="image-center">
+        <img src="https://www.creativefabrica.com/wp-content/uploads/2021/01/22/Welcome-Vector-Graphics-7974449-1.png" alt="Imagen Semana del Inglés" width="300">
+      </div>
+        </td>
+    </tr>
+ 
+    <!-- Día 2 -->
+    <tr>
+      <td>Day #2 <br> Tuesday 5th</td>
+      <td>Activity #1: <br> English Karaoke</td>
+    </tr>
+    <tr>
+      <td>Day #2 <br> Tuesday 5th</td>
+      <td>Activity #2: <br> Message in a Bottle Wall</td>
+    </tr>
+    <tr>
+      <td>Day #2 <br> Tuesday 5th</td>
+      <td>Activity #3: <br> Primary level: Costume Superheroes and Pincess Day</td>
+    </tr>
+    <tr>
+      <td>Day #2 <br> Tuesday 5th</td>
+      <td>Activity #4: <br> English Photo Booth</td>
+    </tr>
+ 
+    <!-- Día 3 -->
+    <tr>
+      <td>Day #3 <br> Wednesday 6th</td>
+      <td>Activity #1: <br> Mystery Box Game</td>
+    </tr>
+    <tr>
+      <td>Day #3 <br> Wednesday 6th</td>
+      <td>Activity #2: <br> English Dice Game</td>
+    </tr>
+    <tr>
+      <td>Day #3 <br> Wednesday 6th</td>
+      <td>Activity #3: <br> Spelling Charade</td>
+    </tr>
+    <tr>
+      <td>Day #3 <br> Wednesday 6th</td>
+      <td>Activity #4: <br> Mini Talent Show</td>
+    </tr>
+ 
+    <!-- Día 4 -->
+    <tr>
+      <td>Day #4: <br> Thursday 7th</td>
+      <td>Activity #1: <br> Word Art Gallery</td>
+    </tr>
+    <tr>
+      <td>Day #4: <br> Thursday 7th</td>
+      <td>Activity #2: <br> The Spelling Fish</td>
+    </tr>
+ 
+    <!-- Día 5 -->
+    <tr>
+      <td>Day #5: <br> Friday 8th</td>
+      <td>Activity #1: <br> Closing Ceremony, Difference Stands/Booths</td>
+    </tr>
+  </tbody>
+</table>
+ 
+    </section>
+ 
+  <section id="codigoqr" class="section">
+    <h1>QR Code</h1>
+    <div class="qr-container">
+      <div class="qr-box">
+          <h2>English Week</h2>
+          <img src="qr_english_week.png" alt="QR English Week">
+        </div>
+      <div class="qr-box">
+        <h2>SYRAX Prom</h2>
+        <img src="qr_syrax_prom.jpg" alt="QR SYRAX Prom" class="qr-small" onclick="expandQR('qr_syrax_prom.jpg')">
+      </div>
+      <div id="qrModal" class="qr-modal" onclick="closeQR()">
+        <span class="close-btn">✖</span>
+        <img id="qrExpanded" class="qr-large" src="qr_syrax_prom.jpg" alt="Código QR grande">
+      </div>
+    </div>
+  </section>
+</div>
+ 
+  <footer>
+    <div class="logo">English Week</div>
+  </footer>
+</body>
+</html>
