@@ -53,21 +53,21 @@ nav a {
 }
 
 .section p {
-  display: inline-block;
-  text-align: left;
+  display: block;            /* Cambiado para centrar */
+  text-align: center;        /* Centrar texto */
   max-width: 600px;
   line-height: 1.6;
-  margin-bottom: 15px;
+  margin: 0 auto 15px;
   padding: 0 10px;
   color: rgb(0, 0, 0);
 }
 
 .section h1, .section h2 {
-  display: inline-block;
-  text-align: left;
-  max-width: 600px;
+  display: block;            /* Cambiado para mejor centrado */
+  text-align: center;        /* Centrar texto */
+  max-width: 100%;           /* Que ocupe todo el ancho */
   margin: 0 auto 20px;
-  color: #000;
+  color: #ffffff;            /* Títulos en blanco */
 }
 
 .image-center {
@@ -97,8 +97,8 @@ table {
 th, td {
   border: 1px solid #004080;
   padding: 12px;
-  text-align: left;
-  color: rgb(0, 0, 0);
+  text-align: center;        /* Centrar texto en tabla */
+  color: rgb(0, 0, 0);       /* Texto negro en tabla */
 }
 
 th {
@@ -165,6 +165,23 @@ tr:nth-child(even) {
   .section p, .section h1, .section h2 {
     padding: 0 15px;
     font-size: 16px;
+  }
+
+  /* Restaurar estilos originales para móviles */
+  .section h1, .section h2 {
+    display: inline-block;
+    text-align: left;
+    color: #000000; /* Color negro original */
+    max-width: 600px;
+    margin: 0 auto 20px;
+  }
+  
+  .section p {
+    text-align: left;
+  }
+  
+  th, td {
+    text-align: left;
   }
 
   table {
