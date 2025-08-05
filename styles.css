@@ -203,13 +203,14 @@ tr:nth-child(even) {
 }
 
 /* Pantallas grandes (769px en adelante) */
-@media (min-width: 769px) {
+@media (min-width: 76px) {
   .container {
-    max-width: 800px;
+    max-width: 80px;
   }
 
   h1 {
     font-size: 32px;
   }
 }
+
 
