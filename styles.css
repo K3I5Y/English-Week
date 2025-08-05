@@ -158,45 +158,55 @@ tr:nth-child(even) {
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
-  body {
-    font-size: 14px;
-    padding: 10px;
-  }
-
+/* Teléfonos (hasta 480px) */
+@media (max-width: 480px) {
   .container {
-    padding: 0 10px;
+    max-width: 90%;
+    padding: 10px;
   }
 
   h1 {
     font-size: 24px;
-    text-align: center;
   }
 
   nav {
     flex-direction: column;
+    align-items: center;
   }
 
   nav a {
+    font-size: 16px;
     margin: 8px 0;
-  }
-
-  table, th, td {
-    font-size: 12px;
-    padding: 8px;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
   }
 
   .qr-box img {
     width: 120px;
     height: 120px;
   }
+}
 
-  .qr-large {
-    width: 90%;
+/* Tablets (481px a 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  nav a {
+    font-size: 17px;
+  }
+}
+
+/* Pantallas grandes (769px en adelante) */
+@media (min-width: 769px) {
+  .container {
+    max-width: 800px;
+  }
+
+  h1 {
+    font-size: 32px;
   }
 }
