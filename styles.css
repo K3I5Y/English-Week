@@ -53,14 +53,21 @@ nav a {
 }
 
 .section p {
-  display: block;            /* Cambiado para centrar */
-  text-align: center;        /* Centrar texto */
-  max-width: 600px;
-  line-height: 1.6;
   margin: 0 auto 15px;
   padding: 0 10px;
+  max-width: 600px;
+  text-align: center; /* centrado */
   color: rgb(0, 0, 0);
+  display: block;
+  line-height: 1.6;
+  word-wrap: break-word; /* para evitar que las palabras largas salgan del contenedor */
 }
+
+.section p strong {
+  font-weight: bold;
+  display: inline; /* asegurar que strong sea inline */
+}
+
 
 .section h1, .section h2 {
   display: block;            /* Cambiado para mejor centrado */
@@ -193,4 +200,5 @@ tr:nth-child(even) {
     height: 120px;
   }
 }
+
 
