@@ -1,16 +1,18 @@
-/* General */
+/* 🎯 Estilo base */
 body {
   font-family: Arial, sans-serif;
+  font-size: 16px;
   margin: 0;
   padding: 0;
   background-color: #e4f6fc;
-  text-align: center;
 }
 
+/* 🧭 Header y Footer */
 header, footer {
   background-color: #007BFF;
   color: #ffffff;
   padding: 10px;
+  text-align: center;
 }
 
 header .logo, footer .logo {
@@ -18,6 +20,21 @@ header .logo, footer .logo {
   font-weight: bold;
 }
 
+/* 🖼️ Imágenes del header */
+.header-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.header-images img {
+  max-width: 180px;
+  border-radius: 10px;
+}
+
+/* 🧩 Menú */
 nav {
   background-color: #B3E5FC;
   display: flex;
@@ -33,40 +50,34 @@ nav a {
   font-size: 18px;
 }
 
-.header-images {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-top: 10px;
-}
-
-.header-images img {
-  max-width: 180px;
-  height: auto;
-  border-radius: 10px;
-}
-
-/* Layout */
-.container {
-  width: 100%;
-  max-width: 900px;
-  margin: auto;
+/* 🧱 Sección centrada */
+.section {
+  background-color: inherit;
+  text-align: center;
   padding: 20px;
 }
 
-.section {
-  margin: 30px 0;
+/* ✏️ Párrafos centrados pero legibles */
+.section p {
+  display: inline-block;
+  text-align: left;
+  max-width: 600px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  padding: 0 10px;
+  color: white;
 }
 
-h1 {
-  font-size: 32px;
+/* 🏷️ Títulos */
+.section h1, .section h2 {
+  display: inline-block;
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto 20px;
+  color: white;
 }
 
-p, h2 {
-  font-size: 18px;
-}
-
+/* 🌠 Imágenes centradas */
 .image-center {
   display: flex;
   justify-content: center;
@@ -81,33 +92,33 @@ p, h2 {
   border-radius: 8px;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Table */
+/* 📊 Tablas centradas */
 table {
-  width: 100%;
+  margin: 0 auto;
+  display: block;
+  overflow-x: auto;
+  max-width: 100%;
   border-collapse: collapse;
+  font-size: 16px;
+  background-color: transparent;
 }
 
 th, td {
   border: 1px solid #004080;
   padding: 12px;
-  text-align: center;
+  text-align: left;
+  color: white;
 }
 
 th {
   background-color: #004080;
-  color: #ffffff;
 }
 
 tr:nth-child(even) {
-  background-color: #bceeff;
+  background-color: #2e7dc7;
 }
 
-/* QR Section */
+/* 📦 Contenedor QR */
 .qr-container {
   display: flex;
   justify-content: center;
@@ -132,13 +143,14 @@ tr:nth-child(even) {
   transform: scale(1.05);
 }
 
-/* Modal */
+/* 🪟 Modal QR */
 .qr-modal {
   display: none;
   position: fixed;
   z-index: 999;
   top: 0; left: 0;
-  width: 100vw; height: 100vh;
+  width: 100vw;
+  height: 100vh;
   background-color: rgba(0,0,0,0.6);
   justify-content: center;
   align-items: center;
@@ -160,33 +172,19 @@ tr:nth-child(even) {
   cursor: pointer;
 }
 
-/* Responsive */
-@media (max-width: 480px) {
-  h1 {
-    font-size: 24px;
-  }
-
-  nav {
-    flex-direction: column;
-  }
-
-  nav a {
+/* 📱 Adaptación móvil */
+@media (max-width: 600px) {
+  .section p, .section h1, .section h2 {
+    padding: 0 15px;
     font-size: 16px;
-    margin: 6px 0;
+  }
+
+  table {
+    font-size: 14px;
   }
 
   .qr-box img {
     width: 120px;
     height: 120px;
-  }
-}
-
-@media (min-width: 481px) and (max-width: 768px) {
-  h1 {
-    font-size: 28px;
-  }
-
-  nav a {
-    font-size: 17px;
   }
 }
