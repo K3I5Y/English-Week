@@ -97,13 +97,12 @@ nav a {
 
 table {
   margin: 0 auto;
-  display: table;
-  overflow-x: auto;
-  width: auto;
-  max-width: 100%;
   border-collapse: collapse;
+  width: auto;               /* Para que no se estire */
+  max-width: 100%;
   font-size: 16px;
   background-color: transparent;
+  table-layout: auto;        /* Muy importante para evitar celdas vacías */
 }
 
 th, td {
@@ -111,10 +110,12 @@ th, td {
   padding: 12px;
   text-align: center;
   color: rgb(0, 0, 0);
+  vertical-align: middle;    /* Centrado vertical */
 }
 
 th {
   background-color: #004080;
+  color: white;
 }
 
 tr:nth-child(even) {
@@ -213,6 +214,7 @@ tr:nth-child(even) {
     height: 120px;
   }
 }
+
 
 
 
