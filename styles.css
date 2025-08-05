@@ -8,7 +8,7 @@ body {
 
 header, footer {
   background-color: #007BFF;
-  color: #ffffff;
+  color: #000000;
   padding: 15px;
   text-align: center;
 }
@@ -98,7 +98,7 @@ th, td {
   border: 1px solid #004080;
   padding: 12px;
   text-align: left;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 th {
