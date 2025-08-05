@@ -98,19 +98,18 @@ nav a {
 table {
   margin: 0 auto;
   border-collapse: collapse;
-  width: auto;               /* Para que no se estire */
+  width: auto;
   max-width: 100%;
   font-size: 16px;
   background-color: transparent;
-  table-layout: auto;        /* Muy importante para evitar celdas vacías */
 }
 
 th, td {
   border: 1px solid #004080;
   padding: 12px;
   text-align: center;
+  vertical-align: middle;
   color: rgb(0, 0, 0);
-  vertical-align: middle;    /* Centrado vertical */
 }
 
 th {
@@ -214,6 +213,7 @@ tr:nth-child(even) {
     height: 120px;
   }
 }
+
 
 
 
