@@ -97,8 +97,9 @@ nav a {
 
 table {
   margin: 0 auto;
-  display: block;
+  display: table;
   overflow-x: auto;
+  width: auto;
   max-width: 100%;
   border-collapse: collapse;
   font-size: 16px;
@@ -196,11 +197,11 @@ tr:nth-child(even) {
   }
   
   .section p {
-    text-align: left;
+    text-align: center;
   }
   
   th, td {
-    text-align: left;
+    text-align: center;
   }
 
   table {
@@ -212,6 +213,7 @@ tr:nth-child(even) {
     height: 120px;
   }
 }
+
 
 
 
